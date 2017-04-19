@@ -25,3 +25,24 @@ h1 {
 p {
   color: #484848;
 }
+
+/* ########################################################""*/
+
+nav {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: ;
+}
+
+nav a{
+  text-decoration: none;
+  color: #767676;
+}
+
+nav a:hover{
+  color: #008489;
+  text-decoration: ;
+}
