@@ -69,7 +69,7 @@ figcaption p {
   line-height: ;
 }
 
-figcaption img {
+figcaption img { /*star ratings icon. without set dimensions img stretches out*/
   width: 12px;
   height: 12px;
 }
@@ -79,8 +79,7 @@ figcaption img {
   font-weight: bold;
 }
 
-
-.ratings-figcaption {
+.ratings-figcaption { /*includes star-ratings img and comments p*/
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -88,5 +87,5 @@ figcaption img {
 
 .comments-figcaption {
   font-size: 10px;
-  margin: 0;
+  margin: 0; /*removed margin otherwise it doesn't aligne to top*/
 }
