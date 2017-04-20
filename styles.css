@@ -1,3 +1,7 @@
+* {
+  border: 1px solid black;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -12,7 +16,7 @@ section {
   height: 90px;
 }
 
-h1, p {
+h1, section p {
   font-size: 25px;
   line-height: 30px;
   letter-spacing: -0.6px;
@@ -45,4 +49,44 @@ nav a{
 nav a:hover{
   color: #008489;
   text-decoration: ;
+}
+
+/* ########################################################""*/
+
+h3 {
+  font-size: 19px;
+  margin-bottom: 24px;
+}
+
+figcaption {
+  width: 177px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+figcaption p {
+  font-size: 14px;
+  line-height: ;
+}
+
+figcaption img {
+  width: 12px;
+  height: 12px;
+}
+
+.price-figcaption {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.ratings-figcaption {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.comments-figcaption {
+  font-size: 10px;
+  margin: 0;
 }
