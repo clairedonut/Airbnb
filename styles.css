@@ -6,21 +6,15 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-header {
-  width: 51px;
+/* ###################  Header  ############################# */
+
+
+header { /*mobile and tablet formats: only logo + menu-arrow are visible*/
+  width: 51px; /*applicable solely to mobile and tablet formats*/
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: row; /*imgs (logo + menu-arrow) are next to eachother*/
+  align-items: center; /*aligns img menu-arrow to logo. without it img menu-arrow stretches*/
   justify-content: space-between;
-}
-
-
-
-header img { /*to adjust menu-arrow to logo*/
-  /*vertical-align: middle;
-  line-height: 50%;
-  */
-
 }
 
 /*
@@ -44,7 +38,7 @@ p {
   color: #484848;
 }
 
-/* ########################################################""*/
+/* ###################  Nav  ############################# */
 
 nav {
   font-family: Helvetica, sans-serif;
@@ -65,7 +59,7 @@ nav a:hover{
   text-decoration: ;
 }
 
-/* ########################################################""*/
+/* ########################### Row with Img   ############################# */
 
 h3 {
   font-size: 19px;
