@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; /* closest google-font to Airbnb's circular */
 }
 
 /* ###################  Header  ############################# */
