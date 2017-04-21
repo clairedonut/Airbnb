@@ -6,6 +6,10 @@ body {
   font-family: 'Poppins', sans-serif; /* closest google-font to Airbnb's circular */
 }
 
+p {
+  color: #484848;
+}
+
 /* ###################  Header  ############################# */
 
 
@@ -34,9 +38,6 @@ h1 {
   color: #FF5A5F;
 }
 
-p {
-  color: #484848;
-}
 
 /* ###################  Nav  ############################# */
 
