@@ -1,25 +1,39 @@
 * {
-  border: 1px solid black;
+  border: 1px  black;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-header img { /*to adjust menu-arrow to logo*/
-  vertical-align: middle;
-  line-height: 50%;
+header {
+  width: 51px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
+
+
+header img { /*to adjust menu-arrow to logo*/
+  /*vertical-align: middle;
+  line-height: 50%;
+  */
+
+}
+
+/*
 section {
   width: 327px;
   height: 90px;
 }
+*/
 
 h1, section p {
   font-size: 25px;
-  line-height: 30px;
-  letter-spacing: -0.6px;
+  /*line-height: 30px;
+  letter-spacing: -0.6px;*/
 }
 
 h1 {
