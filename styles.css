@@ -1,8 +1,3 @@
-* {
-  border:
-  ;
-}
-
 body {
   font-family: 'Poppins', sans-serif; /* closest google-font to Airbnb's circular */
   color: #484848;
@@ -64,12 +59,14 @@ nav a:hover{
 
 /* ########################### Row with Img   ############################# */
 
+/*
 .row-figure-aside {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   overflow: auto;
 }
+
+*/
 
 h3 {
   font-size: 19px;
@@ -77,6 +74,7 @@ h3 {
 }
 
 figure {
+  margin: 0 6px;
 }
 
 figcaption {
