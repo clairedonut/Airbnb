@@ -1,8 +1,8 @@
 body {
   font-family: 'Poppins', sans-serif; /* closest google-font to Airbnb's circular */
   color: #484848;
-  margin: 24px;
-  height: 3500px;
+  margin: 0;
+  height: 3000px;
 }
 
 p {
@@ -109,4 +109,19 @@ figcaption img { /*without set dimensions img (star-ratings) stretches out*/
 .comments-figcaption {
   font-size: 12px;
   margin: 0; /*removed margin otherwise it doesn't align to top*/
+}
+
+/* #### Button #### */
+
+button {
+  padding: 8px 16px;
+  background-color: #008489;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  transition: background 0.3s, border-color 0.3s;
 }
