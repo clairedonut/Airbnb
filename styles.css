@@ -1,9 +1,11 @@
 * {
-  border: 1px solid black;
+  border:
+  ;
 }
 
 body {
   font-family: 'Poppins', sans-serif; /* closest google-font to Airbnb's circular */
+  color: #484848;
 }
 
 p {
@@ -62,34 +64,49 @@ nav a:hover{
 
 /* ########################### Row with Img   ############################# */
 
+.row-figure-aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: auto;
+}
+
 h3 {
   font-size: 19px;
   margin-bottom: 24px;
 }
 
-figcaption {
-  width: 177px;
-  font-size: 14px
+figure {
 }
 
+figcaption {
+  width: 177px;
+  font-size: 14px; /*valid on price and description text*/
+}
 
-figcaption img { /*star ratings icon. without set dimensions img stretches out*/
-  width: 12px;
-  height: 12px;
+figcaption p {
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+figcaption img { /*without set dimensions img (star-ratings) stretches out*/
+  width: 13px;
+  height: 13px;
 }
 
 .price-figcaption {
-  font-size: 15px;
+  /*font-size: 15px;*/
   font-weight: bold;
 }
 
 .ratings-figcaption { /*includes star-ratings img and comments p*/
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
+
 }
 
 .comments-figcaption {
-  font-size: 10px;
-  margin: 0; /*removed margin otherwise it doesn't aligne to top*/
+  font-size: 12px;
+  margin: 0; /*removed margin otherwise it doesn't align to top*/
 }
