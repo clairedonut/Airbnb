@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important otherwise browser doesn't take scale into consideration and media query for mobile = 980px in body -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> <!-- closest font-family to Airbnb font circular -->
     <link rel="icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
@@ -18,10 +18,10 @@
     </header>
 
     <section>  <!-- Different text displayed on firefox // chrome browsers -->
-      <h1>Où souhaitez-vous aller ?</h1>
-      <p>
+      <h1>
+        <span class="h1-span">Où souhaitez-vous aller ? </span>
         Votre prochain voyage commence sur Airbnb.
-      </p>
+      </h1>
     </section>
 
     <form>

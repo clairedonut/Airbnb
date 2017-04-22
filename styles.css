@@ -1,6 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif; /* closest google-font to Airbnb's circular */
   color: #484848;
+  margin: 24px;
 }
 
 p {
@@ -25,14 +26,16 @@ section {
 }
 */
 
-h1, section p {
-  font-size: 25px;
-  /*line-height: 30px;
-  letter-spacing: -0.6px;*/
+h1{
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: -0.6px;
 }
 
-h1 {
+.h1-span {
   color: #FF5A5F;
+  font-weight: bold;
 }
 
 
@@ -59,14 +62,12 @@ nav a:hover{
 
 /* ########################### Row with Img   ############################# */
 
-/*
 .row-figure-aside {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   overflow: auto;
 }
 
-*/
 
 h3 {
   font-size: 19px;
