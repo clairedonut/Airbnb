@@ -94,7 +94,7 @@ form img {
   width: 18px;
 }
 
-.p-form {
+.mobile-p-form {
   padding: 0;
   margin: 0;
 
@@ -357,7 +357,7 @@ header {
   border-bottom: 3px solid #727272;
 }
 
-h1 {
+h1, form {
   margin-left: 110px;
 }
 
@@ -368,4 +368,56 @@ h1 {
   font-size: 50px;
   line-height: 65px;
   letter-spacing: -0.3px;
+}
+
+.mobile-img-form, .mobile-p-form {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop-label-form {
+  width: 35%;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 11px;
+}
+
+input {
+  margin: 0;
+
+  font-size: 23px;
+  line-height: 24px;
+}
+
+
+.select-form {
+  border: none;
+  padding: 0px;
+  margin: 0;
+
+  font-size: 20px;
+}
+
+.select-form:hover {
+  cursor: pointer;
+}
+
+.button-form {
+  margin: 12px;
+  padding: 18px;
+
+  font-size: 20px;
+
+  background-color: #FF5A5F;
 }

@@ -30,11 +30,42 @@
       Votre prochain voyage commence sur Airbnb.
     </h1>
 
+
+
     <form>
-      <img src="https://cdn3.iconfinder.com/data/icons/searchicons/338/Searchicons-search-20.png" alt="search icon" />
-      <p class="p-form">
+      <img class="mobile-img-form" src="https://cdn3.iconfinder.com/data/icons/searchicons/338/Searchicons-search-20.png" alt="search icon" />
+      <p class="mobile-p-form">
         Partout · Dates indifférentes · 1 voyageur
       </p>
+
+
+
+        <div class="desktop-label-form">
+          <label for="where">Où</label>
+          <input  name="where" type="text" placeholder="Partout"/>
+        </div>
+
+        <div class="desktop-label-form">
+        <label for="when">Quand</label>
+        <input  name="when" type="text" placeholder="Dates indifférentes"/>
+      </div>
+
+        <div class="desktop-label-form">
+        <label for="who">Voyageurs</label>
+        <select class="select-form" name="who">
+          <option value="1">1 Voyageur</option>
+          <option value="2">2 Voyageurs</option>
+          <option value="3">3 Voyageurs</option>
+          <option value="4">4 Voyageurs</option>
+          <option value="5">5 Voyageurs</option>
+          <option value="6">6 Voyageurs</option>
+          <option value="7">7 Voyageurs</option>
+        </select>
+        </div>
+
+        <button class="button-form" type="submit" value="Rechercher">Rechercher</button>
+
+
     </form>
 
     <nav>
