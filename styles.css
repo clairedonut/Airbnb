@@ -18,7 +18,7 @@ h2 {
   font-size: 22px;
   font-weight: bold;
   margin-right: 0;
-  padding-top: 24px; 
+  padding-top: 24px;
 }
 
 h3 {
@@ -33,11 +33,7 @@ header, h1, h2, form, nav, aside, p {
   margin: 24px;
 }
 
-
-
-
 /* ###################  Header  ############################# */
-
 
 header { /*mobile and tablet formats: only logo + menu-arrow are visible*/
   width: 51px; /*applicable solely to mobile and tablet formats*/
