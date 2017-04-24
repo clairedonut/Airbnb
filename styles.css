@@ -307,6 +307,9 @@ select {
   justify-content: space-between;
 }
 
+.links-footer, .socialmedia-footer {
+}
+
 .links-footer a, .socialmedia-footer img {
   margin: 5px;
 }
