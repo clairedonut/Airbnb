@@ -330,14 +330,13 @@ select {
 
 @media only screen and (min-device-width: 999px) {
 
-#arrow-img-header, .mobile-img {
+#arrow-img-header, .mobile-img-form, .mobile-p-form, .mobile-img  {
   display: none;
 }
 
 
-
-h1, form, nav, aside{
-  margin-left: 110px;
+h1, form, nav, aside, section{
+  margin: auto 110px;
 }
 
 header {
@@ -349,6 +348,8 @@ header {
 .desktop-menu-header {
   display: flex;
   flex-direction: row;
+
+  font-size: 14px;
 }
 
 .desktop-menu-header a {
@@ -366,20 +367,28 @@ header {
 
 
 h1 {
-  width: 40%;
+  width: 50%;
 
-  font-size: 50px;
+  font-size: 45px;
   line-height: 65px;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.5px;
 }
 
-.mobile-img-form, .mobile-p-form {
-  display: none;
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+
+  letter-spacing: -0.6px;
+line-height: 36px;
 }
+
+
 
 form {
   display: flex;
   flex-direction: row;
+
+  padding: 0;
 }
 
 .desktop-label-form {
@@ -399,7 +408,7 @@ label {
 input {
   margin: 0;
 
-  font-size: 23px;
+  font-size: 19px;
   line-height: 24px;
 }
 
@@ -427,14 +436,13 @@ input {
   background-color: #FF5A5F;
 }
 
-nav {
-  font-size: 15px;
+section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
-.desktop-img {
-  width: 100%;
-
-  background-image: url("file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-original/exp-4.jpg");
-  background-size: 80px 60px;
-background-repeat: no-repeat;
+#desktop-img {
+  width: 516px;
+  height: 270px;
 }
