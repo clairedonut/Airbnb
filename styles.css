@@ -38,6 +38,8 @@ header, h1, form, nav, aside, p {
   margin: 24px;
 }
 
+
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -316,5 +318,54 @@ select {
 
 .links-footer a {
   font-size: 12px;
+}
 
+/* ##### don't display ####*/
+
+.desktop-menu-header {
+  display: none;
+}
+
+/* ############  MEDIA QUERY tablet screen - min-device-width: 999px  ############ */
+
+@media only screen and (min-device-width: 999px) {
+
+#arrow-img-header {
+  display: none;
+}
+
+header {
+  justify-content: space-between;
+  width: 95%;
+}
+
+
+.desktop-menu-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop-menu-header a {
+  width: auto;
+  margin: 20px;
+
+  white-space: nowrap;
+}
+
+.desktop-menu-header a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid #727272;
+}
+
+h1 {
+  margin-left: 110px;
+}
+
+
+h1 {
+  width: 40%;
+
+  font-size: 50px;
+  line-height: 65px;
+  letter-spacing: -0.3px;
 }
