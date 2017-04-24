@@ -1,31 +1,47 @@
+* {
+  border: 1px black;
+}
+
 body {
   font-family: 'Poppins', sans-serif; /* closest google-font to Airbnb's circular */
   color: #484848;
   margin: 0;
-  height: 3000px;
+  padding: 0;
 }
 
-p {
-  color: #484848;
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 0;
 }
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+
+  margin: 0;
+}
+
+header, h1, h2, form, nav, aside, p {
+  margin: 24px;
+}
+
+
+
 
 /* ###################  Header  ############################# */
 
 
 header { /*mobile and tablet formats: only logo + menu-arrow are visible*/
   width: 51px; /*applicable solely to mobile and tablet formats*/
+
   display: flex;
   flex-direction: row; /*imgs (logo + menu-arrow) are next to eachother*/
   align-items: center; /*aligns img menu-arrow to logo. without it img menu-arrow stretches*/
   justify-content: space-between;
 }
-
-/*
-section {
-  width: 327px;
-  height: 90px;
-}
-*/
 
 h1{
   font-size: 22px;
@@ -40,53 +56,134 @@ h1{
 }
 
 
+
+/* ###################  Search Form  ####################### */
+
+form {
+  padding: 11px 12px;
+  cursor: pointer;
+  width: 80%;
+
+
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: row; /*imgs (logo + menu-arrow) are next to eachother*/
+  align-items: center; /*aligns img menu-arrow to logo. without it img menu-arrow stretches*/
+  justify-content: flex-start;
+
+}
+
+form img {
+  margin-right: 8px;
+  width: 18px;
+}
+
+.p-form {
+  padding: 0;
+  margin: 0;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-family: 'Poppins', sans-serif; /* closest google-font to Airbnb's circular */
+  font-size: 15px;
+  line-height: 18px;
+}
+
+
 /* ###################  Nav  ############################# */
 
 nav {
   font-family: Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  line-height: ;
+
+
+  width: 80%;
+  padding-bottom: 12px;
+  border-bottom: 0.5px solid grey;
+
+  overflow: auto;
+  white-space: nowrap;
+
 }
 
 nav a{
   text-decoration: none;
-  color: #767676;
+  color: #484848;
+  padding-bottom: 12px;
+  margin-right: 16px;
 }
 
-nav a:hover{
+.selected-nav {
   color: #008489;
-  text-decoration: ;
+  padding-bottom: 11px;
+  border-bottom: 3px solid #008489;
 }
 
 /* ########################### Row with Img   ############################# */
 
-.row-figure-aside {
+aside { /*contains figure and figcaption*/
+  width: auto;
+
   display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
   justify-content: space-between;
+
   overflow: auto;
+
 }
 
-
-h3 {
-  font-size: 19px;
-  margin-bottom: 24px;
+/*
+.destinations-figure {
+  margin: 6px;
+  width: 32%;
 }
+*/
 
 figure {
-  margin: 0 6px;
+  margin: 6px;
+}
+
+
+
+
+.exp-figure {
+  width: 50% ;
+}
+
+.logements-figure {
+  width: 65% ;
+}
+
+.destinations-figure {
+  width: 33%;
+}
+
+figure img {
+  width: auto;
 }
 
 figcaption {
-  width: ;
   font-size: 14px; /*valid on price and description text*/
 }
 
 figcaption p {
   margin: 0;
+
+  line-height: 1.5em;
   letter-spacing: 0.2px;
+
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
 }
 
 figcaption img { /*without set dimensions img (star-ratings) stretches out*/
@@ -103,7 +200,6 @@ figcaption img { /*without set dimensions img (star-ratings) stretches out*/
   width: 100%;
   display: flex;
   align-items: baseline;
-
 }
 
 .comments-figcaption {
@@ -112,6 +208,19 @@ figcaption img { /*without set dimensions img (star-ratings) stretches out*/
 }
 
 /* #### Button #### */
+
+section img {
+  width: 100%;
+}
+
+.hosts-section h2, .hosts-section p, .hosts-section button {
+ margin: 5px 0 5px 24px;
+}
+
+.hosts-section h2, .hosts-section p {
+ width: 80%;
+}
+
 
 button {
   padding: 8px 16px;

@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important otherwise browser doesn't take scale into consideration and media query for mobile = 980px in body -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> <!-- closest font-family to Airbnb font circular -->
     <link rel="icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
@@ -17,20 +17,20 @@
       <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-original/menu-arrowdown-9x9.png" alt="dropdown menu icon"  />
     </header>
 
-    <section>  <!-- Different text displayed on firefox // chrome browsers -->
-      <h1>
-        <span class="h1-span">Où souhaitez-vous aller ? </span>
-        Votre prochain voyage commence sur Airbnb.
-      </h1>
-    </section>
+    <h1>  <!-- Different text displayed on firefox // chrome browsers -->
+      <span class="h1-span">Où souhaitez-vous aller ? </span>
+      Votre prochain voyage commence sur Airbnb.
+    </h1>
 
     <form>
-      <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-20.png" alt="search icon" />
-
+      <img src="https://cdn3.iconfinder.com/data/icons/searchicons/338/Searchicons-search-20.png" alt="search icon" />
+      <p class="p-form">
+        Partout · Dates indifférentes · 1 voyageur
+      </p>
     </form>
 
     <nav>
-      <a href="#">Recommandé</a>
+      <a href="#"><span class="selected-nav">Recommandé</span></a>
       <a href="#">Logements</a>
       <a href="#">Expériences</a>
       <a href="#">Lieux</a>
@@ -38,12 +38,11 @@
 
 <!-- ASIDE Row #1 "Réservées à l'instant" -->
 
+    <h2>Réservées à l'instant</h2>
+
     <aside>
-      <h3>Réservées à l'instant</h3>
 
-      <div class="row-figure-aside">
-
-        <figure>
+        <figure class="exp-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -66,7 +65,7 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="exp-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -89,7 +88,7 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="exp-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -112,7 +111,7 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="exp-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -135,7 +134,7 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="exp-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -158,19 +157,19 @@
           </figcaption>
         </figure>
 
-      </div>
     </aside>
 
 
 <!-- ASIDE Row #2 "Expériences" -->
 
+<h2>Expériences</h2>
+
 
     <aside>
-      <h3>Expériences</h3>
 
-      <div class="row-figure-aside">
 
-        <figure>
+
+      <figure class="exp-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -193,7 +192,7 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="exp-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -216,7 +215,7 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="exp-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -239,7 +238,7 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="exp-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -262,7 +261,8 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="exp-figure">
+
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/exp-4-177x265.jpg" alt="#"/>
 
           <figcaption>
@@ -285,17 +285,15 @@
           </figcaption>
         </figure>
 
-      </div>
     </aside>
 
 <!-- ASIDE Row #3 "Logements" -->
 
+    <h2>Logements</h2>
+
     <aside>
-      <h3>Logements</h3>
 
-      <div class="row-figure-aside">
-
-        <figure>
+        <figure class="logements-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/logement-240x160.jpg" alt="#"/>
 
           <figcaption>
@@ -322,7 +320,7 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="logements-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/logement-240x160.jpg" alt="#"/>
 
           <figcaption>
@@ -349,7 +347,7 @@
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="logements-figure">
           <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/logement-240x160.jpg" alt="#"/>
 
           <figcaption>
@@ -371,70 +369,67 @@
               <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
 
               <p class="comments-figcaption">14 commentaires</p>
-            </div>
 
           </figcaption>
         </figure>
-
-      </div>
 
     </aside>
 
 <!-- ASIDE Row #4 "Destinations à la une" -->
 
+
+
+<h2>Destinations à la une	</h2>
+
+
     <aside>
-      <h3>Destinations à la une	</h3>
 
-      <div class="row-figure-aside">
 
-        <figure>
-          <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-114x177.jpg" alt="#"/>
+
+        <figure class="destinations-figure">
+          <img class="destinations-img" src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-2-114x177.jpg" alt="#"/>
           <figcaption>
-            <p><span class="price-figcaption">
-              San Francisco
-            </span></p>
+            <h3>Tokyo</h3>
           </figcaption>
         </figure>
 
-        <figure>
-          <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-114x177.jpg" alt="#"/>
+        <figure class="destinations-figure">
+          <img class="destinations-img" src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-2-114x177.jpg" alt="#"/>
           <figcaption>
-            <p><span class="price-figcaption">
-              San Francisco
-            </span></p>
+            <h3>Tokyo</h3>
           </figcaption>
         </figure>
 
-        <figure>
-          <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-114x177.jpg" alt="#"/>
+        <figure class="destinations-figure">
+          <img class="destinations-img" src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-2-114x177.jpg" alt="#"/>
           <figcaption>
-            <p><span class="price-figcaption">
-              San Francisco
-            </span></p>
+            <h3>Tokyo</h3>
           </figcaption>
         </figure>
 
-        <figure>
-          <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-114x177.jpg" alt="#"/>
+        <figure class="destinations-figure">
+          <img class="destinations-img" src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-2-114x177.jpg" alt="#"/>
           <figcaption>
-            <p><span class="price-figcaption">
-              San Francisco
-            </span></p>
+            <h3>Tokyo</h3>
           </figcaption>
         </figure>
 
-        <figure>
-          <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-114x177.jpg" alt="#"/>
+        <figure class="destinations-figure">
+          <img class="destinations-img" src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-2-114x177.jpg" alt="#"/>
           <figcaption>
-            <p><span class="price-figcaption">
-              San Francisco
-            </span></p>
+            <h3>Tokyo</h3>
           </figcaption>
         </figure>
 
-      </div>
+        <figure class="destinations-figure">
+          <img class="destinations-img" src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/city-2-114x177.jpg" alt="#"/>
+          <figcaption>
+            <h3>Tokyo</h3>
+          </figcaption>
+        </figure>
 
     </aside>
+
 
 <!-- #### Section : "hosts" #### -->
 
@@ -442,16 +437,20 @@
 
       <img src="file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-mobile/host-414x217.jpg" alt="#" />
 
-      <h2>Ouvrez la porte à un voyageur et à une nouvelle vie</h2>
+      <div class="hosts-section">
 
-      <p>
+        <h2>Ouvrez la porte à un voyageur et à une nouvelle vie</h2>
+
+        <p>
         Complétez vos revenus en accueillant des voyageurs.
-      </p>
+        </p>
 
-      <button type="button">Estimer mes revenus</button>
+        <button type="button">Estimer mes revenus</button>
+
+      </div>
+
 
     </section>
-
 
   </body>
 
