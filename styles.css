@@ -34,7 +34,7 @@ h3, h4 {
 }
 
 
-header, h1, h2, form, nav, aside, p {
+header, h1, form, nav, aside, p {
   margin: 24px;
 }
 
@@ -141,7 +141,7 @@ nav a{
 
 /* ########################### Row with Img   ############################# */
 
-aside { /*contains figure and figcaption*/
+.div-img-aside { /*contains figure and figcaption*/
   width: auto;
 
   display: flex;
@@ -269,9 +269,9 @@ footer {
 }
 
 select {
-  padding: 12px 40px 12px 12px;
+  padding: 12px ;
   margin: 8px;
-  width: 175px;
+  width: 50%;
 
   border-width: 1px;
   border-style: solid;
@@ -313,4 +313,5 @@ select {
 
 .links-footer a {
   font-size: 12px;
+
 }
