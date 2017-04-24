@@ -243,7 +243,7 @@ section img {
 }
 
 
-button {
+.button-section {
   padding: 8px 16px;
   background-color: #008489;
   cursor: pointer;
@@ -320,9 +320,9 @@ select {
   font-size: 12px;
 }
 
-/* ##### don't display ####*/
+/* !!!!!!!!!!!!! don't display !!!!!!!!!!!!!!!!!! */
 
-.desktop-menu-header {
+.desktop-menu-header, .desktop-label-form, .button-form  {
   display: none;
 }
 
@@ -332,6 +332,11 @@ select {
 
 #arrow-img-header {
   display: none;
+}
+
+
+h1, form, nav, aside{
+  margin-left: 110px;
 }
 
 header {
@@ -357,9 +362,6 @@ header {
   border-bottom: 3px solid #727272;
 }
 
-h1, form {
-  margin-left: 110px;
-}
 
 
 h1 {
@@ -420,4 +422,8 @@ input {
   font-size: 20px;
 
   background-color: #FF5A5F;
+}
+
+nav {
+  font-size: 15px;
 }
