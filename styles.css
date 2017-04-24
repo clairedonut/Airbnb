@@ -320,19 +320,20 @@ select {
   font-size: 12px;
 }
 
-/* !!!!!!!!!!!!! don't display !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!! mobile-first: no display !!!!!!!!!!!!!!!!!! */
 
-.desktop-menu-header, .desktop-label-form, .button-form  {
+.desktop-menu-header, .desktop-label-form, .button-form, .desktop-img  {
   display: none;
 }
 
-/* ############  MEDIA QUERY tablet screen - min-device-width: 999px  ############ */
+/* !!!!!!!!!!!!!!!!!!  desktops - media query - min-device-width: 999px  !!!!!!!!!!!!!!!!!! */
 
 @media only screen and (min-device-width: 999px) {
 
-#arrow-img-header {
+#arrow-img-header, .mobile-img {
   display: none;
 }
+
 
 
 h1, form, nav, aside{
@@ -415,15 +416,25 @@ input {
   cursor: pointer;
 }
 
-.button-form {
+.red-button-form {
   margin: 12px;
   padding: 18px;
+  border-radius: 4px;
 
   font-size: 20px;
+  color: #fff;
 
   background-color: #FF5A5F;
 }
 
 nav {
   font-size: 15px;
+}
+
+.desktop-img {
+  width: 100%;
+
+  background-image: url("file:///home/clairejacquet/sites/prod/5semaine/airbnb-home/images/img-original/exp-4.jpg");
+  background-size: 80px 60px;
+background-repeat: no-repeat;
 }
