@@ -544,9 +544,12 @@ form {
   padding: 0;
 }
 
-.mobile-img-form, .mobile-p-form, label, #desktop-img-figure, #mobile-img-figure {
+.mobile-img-form, .mobile-p-form, label {
   display: none;
 }
+
+#desktop-img-figure, #mobile-img-figure {
+  display: none;
 
 .desktop-label-form, input, select {
   display: block;
@@ -565,6 +568,19 @@ input, select {
   margin-left: 8px;
 }
 
+.exp-figure {
+  width: 50% ;
+  margin: 6px;
+}
 
+.logements-figure {
+  width: 50% ;
+  margin: 6px;
+}
+
+.destinations-figure {
+  width: 25%;
+  margin: 6px;
+}
 
 }
