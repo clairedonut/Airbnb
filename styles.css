@@ -550,6 +550,7 @@ form {
 
 #desktop-img-figure, #mobile-img-figure {
   display: none;
+}
 
 .desktop-label-form, input, select {
   display: block;
@@ -566,6 +567,11 @@ input, select {
   border: 0;
   font-size: 17px;
   margin-left: 8px;
+}
+
+#tablet-img-figure{
+  width: 100%;
+  display: block;
 }
 
 .exp-figure {
