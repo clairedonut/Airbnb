@@ -477,7 +477,7 @@ section {
   justify-content: center;
 }
 
-#desktop-img {
+.desktop-img {
   width: 516px;
   height: 270px;
 
@@ -581,6 +581,8 @@ input, select {
   margin: 6px;
 }
 
+/* !!!! section // media query : tablet !!!! */
+
 section {
   margin-top: 50px;
   width: 90%;
@@ -590,7 +592,7 @@ section {
   justify-content: center;
 }
 
-#desktop-img {
+.desktop-img {
   width: 360px;
   height: 189px;
 
