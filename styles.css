@@ -321,7 +321,7 @@ select {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 
-.desktop-menu-header, .desktop-label-form, #desktop-img  {
+.desktop-menu-header, .desktop-label-form, .desktop-footer, #desktop-img  {
   display: none;
 }
 
@@ -487,9 +487,27 @@ section {
 
 /* !!!! footer // media query : desktop !!!! */
 
+footer {
+  width: 80%;
+  margin: 50px 10%;
+
+
+}
+
+.try {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+
+
 .select-footer {
 display: flex;
 flex-direction: column;
+
+width: 10%;
 
 }
 
@@ -497,7 +515,16 @@ flex-direction: column;
   width: 244px;
 }
 
-.corporate-footer, .bottom-footer, .links-footer, .socialmedia-footer {
-  display: inline-block;
+.desktop-footer{
+ display: block;
+ width: 10%;
 
+ margin-top: 24px;
+}
+
+
+.desktop-footer a {
+  width: 158px;
+  font-size: 15px;
+  display: block;
 }
