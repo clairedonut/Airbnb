@@ -38,14 +38,12 @@ header, h1, form, nav, aside, p {
   margin: 24px;
 }
 
-
-
-::-webkit-scrollbar {
+::-webkit-scrollbar { /* scrollbar is invisible - nav and aside*/
     display: none;
 }
 
 
-/* ###################  Header  ############################# */
+/* !!!!!!!!!!!!!!!!!!!!  Header !!!!!!!!!!!!!!!!!!!!!! */
 
 header { /*mobile and tablet formats: only logo + menu-arrow are visible*/
   width: 51px; /*applicable solely to mobile and tablet formats*/
@@ -70,7 +68,7 @@ h1{
 
 
 
-/* ###################  Search Form  ####################### */
+/* !!!!!!!!!!!!!!!!!!!!!!!!  Search Form  !!!!!!!!!!!!!!!!!!!!!!!! */
 
 form {
   padding: 11px 12px;
@@ -108,7 +106,7 @@ form img {
 }
 
 
-/* ###################  Nav  ############################# */
+/* !!!!!!!!!!!!!!!!!!!!!!!!  Nav  !!!!!!!!!!!!!!!!!!!!!!!! */
 
 nav {
   font-family: Helvetica, sans-serif;
@@ -141,7 +139,7 @@ nav a{
   border-bottom: 3px solid #008489;
 }
 
-/* ########################### Row with Img   ############################# */
+/* !!!!!!!!!!!!!!!!!!!!!!!! Row with Img   !!!!!!!!!!!!!!!!!!!!!!!! */
 
 .div-img-aside { /*contains figure and figcaption*/
   width: auto;
@@ -228,7 +226,7 @@ figcaption img { /*without set dimensions img (star-ratings) stretches out*/
 
 }
 
-/* #### Button #### */
+/* !!!!!!!!!!!!!!!!!!!!!!!! Section hosts !!!!!!!!!!!!!!!!!!!!!!!! */
 
 section img {
   width: 100%;
@@ -256,7 +254,7 @@ section img {
   transition: background 0.3s, border-color 0.3s;
 }
 
-/* #### Footer #### */
+/* !!!!!!!!!!!!!!!!!!!!!!!! Footer !!!!!!!!!!!!!!!!!!!!!!!! */
 
 footer {
 
@@ -300,7 +298,6 @@ select {
   margin-right: 10px;
 }
 
-
 .bottom-footer, .select-footer {
   width: 100%;
 
@@ -309,8 +306,6 @@ select {
   justify-content: space-between;
 }
 
-.links-footer, .socialmedia-footer {
-}
 
 .links-footer a, .socialmedia-footer img {
   margin: 5px;
@@ -320,24 +315,39 @@ select {
   font-size: 12px;
 }
 
-/* !!!!!!!!!!!!! mobile-first: no display !!!!!!!!!!!!!!!!!! */
+/*
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! mobile-first: no display items !!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
 
-.desktop-menu-header, .desktop-label-form, .button-form, .desktop-img  {
+.desktop-menu-header, .desktop-label-form, #desktop-img  {
   display: none;
+}
+
+#button-form, #desktop-img-figure {
+  display: none
 }
 
 /* !!!!!!!!!!!!!!!!!!  desktops - media query - min-device-width: 999px  !!!!!!!!!!!!!!!!!! */
 
 @media only screen and (min-device-width: 999px) {
 
+  /* !!!! items removed for desktop !!!! */
+
 #arrow-img-header, .mobile-img-form, .mobile-p-form, .mobile-img  {
   display: none;
 }
 
+#mobile-img-figure {
+  display: none
+}
 
 h1, form, nav, aside, section{
-  margin: auto 110px;
+  margin: auto 110px; /*margin left and right as there is no main in mobile first version*/
 }
+
+/* !!!! header // media query : desktop !!!! */
 
 header {
   justify-content: space-between;
@@ -364,6 +374,7 @@ header {
   border-bottom: 3px solid #727272;
 }
 
+/* !!!! titles // media query : desktop !!!! */
 
 
 h1 {
@@ -382,6 +393,7 @@ h2 {
 line-height: 36px;
 }
 
+/* !!!! form // media query : desktop !!!! */
 
 
 form {
@@ -425,7 +437,7 @@ input {
   cursor: pointer;
 }
 
-.red-button-form {
+#button-form {
   margin: 12px;
   padding: 18px;
   border-radius: 4px;
@@ -434,9 +446,33 @@ input {
   color: #fff;
 
   background-color: #FF5A5F;
+
+  display: block; /* !! Forces button to display in desktop !! */
 }
 
+/* !!!! aside img rows // media query : desktop !!!! */
+
+aside {
+  margin-top: 50px;
+
+  width: 80%;
+}
+
+#desktop-img-figure{
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+/* !!!! section "hosts" // media query : desktop !!!! */
+
 section {
+  margin-top: 50px;
+  width: 80%;
+
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -445,4 +481,23 @@ section {
 #desktop-img {
   width: 516px;
   height: 270px;
+
+  display: block;
+}
+
+/* !!!! footer // media query : desktop !!!! */
+
+.select-footer {
+display: flex;
+flex-direction: column;
+
+}
+
+.select-footer select {
+  width: 244px;
+}
+
+.corporate-footer, .bottom-footer, .links-footer, .socialmedia-footer {
+  display: inline-block;
+
 }
