@@ -329,9 +329,9 @@ select {
   display: none
 }
 
-/* !!!!!!!!!!!!!!!!!!  desktops - media query - min-device-width: 999px  !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!  desktops - media query - min-device-width: 1024px  !!!!!!!!!!!!!!!!!! */
 
-@media only screen and (min-device-width: 999px) {
+@media only screen and (min-device-width: 1024px) {
 
   /* !!!! items removed for desktop !!!! */
 
@@ -527,4 +527,42 @@ width: 10%;
   width: 158px;
   font-size: 15px;
   display: block;
+}
+
+}
+
+/* !!!!!!!!!!!!!!!!!!  desktops - media query - min-device-width: 768px - max-device-width: 1023px  !!!!!!!!!!!!!!!!!! */
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1000px) {
+
+header, h1, form, nav, aside {
+  margin: 5%;
+  width: 90%;
+}
+
+form {
+  padding: 0;
+}
+
+.mobile-img-form, .mobile-p-form, label {
+  display: none;
+}
+
+.desktop-label-form, input, select {
+  display: block;
+}
+
+.desktop-label-form {
+  width: 35%;
+  border: 0;
+  padding: 0;
+}
+
+input, select {
+  width: 150px;
+  border: 0;
+  font-size: 17px;
+}
+
+
 }
