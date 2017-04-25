@@ -325,7 +325,7 @@ select {
   display: none;
 }
 
-#button-form, #desktop-img-figure {
+#button-form, #desktop-img-figure, #tablet-img-figure {
   display: none
 }
 
@@ -339,7 +339,7 @@ select {
   display: none;
 }
 
-#mobile-img-figure {
+#mobile-img-figure, #tablet-img-figure {
   display: none
 }
 
@@ -544,7 +544,7 @@ form {
   padding: 0;
 }
 
-.mobile-img-form, .mobile-p-form, label {
+.mobile-img-form, .mobile-p-form, label, #desktop-img-figure, #mobile-img-figure {
   display: none;
 }
 
@@ -562,7 +562,9 @@ input, select {
   width: 150px;
   border: 0;
   font-size: 17px;
+  margin-left: 8px;
 }
+
 
 
 }
