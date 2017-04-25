@@ -331,7 +331,7 @@ select {
 
 /* !!!!!!!!!!!!!!!!!!  desktops - media query - min-device-width: 1024px  !!!!!!!!!!!!!!!!!! */
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-device-width: 1025px) {
 
   /* !!!! items removed for desktop !!!! */
 
@@ -533,18 +533,22 @@ width: 10%;
 
 /* !!!!!!!!!!!!!!!!!!  desktops - media query - min-device-width: 768px - max-device-width: 1023px  !!!!!!!!!!!!!!!!!! */
 
-@media only screen and (min-device-width: 767px) and (max-device-width: 1000px) {
+@media only screen and (min-device-width: 767px) and (max-device-width: 1025px) {
 
 header, h1, form, nav, aside {
   margin: 5%;
   width: 90%;
 }
 
+header {
+  justify-content: flex-start;
+}
+
 form {
   padding: 0;
 }
 
-.mobile-img-form, .mobile-p-form, label {
+.mobile-img-form, .mobile-p-form, label, .mobile-img {
   display: none;
 }
 
@@ -580,7 +584,7 @@ input, select {
 }
 
 .logements-figure {
-  width: 50% ;
+  width: 70% ;
   margin: 6px;
 }
 
@@ -588,5 +592,26 @@ input, select {
   width: 25%;
   margin: 6px;
 }
+
+section {
+  margin-top: 50px;
+  width: 90%;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+#desktop-img {
+  width: 360px;
+  height: 189px;
+
+  display: block;
+}
+
+.hosts-section h2 {
+  padding-top: 0;
+}
+
 
 }
