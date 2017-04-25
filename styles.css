@@ -490,18 +490,7 @@ section {
 footer {
   width: 80%;
   margin: 50px 10%;
-
-
 }
-
-.try {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-
 
 .select-footer {
 display: flex;
