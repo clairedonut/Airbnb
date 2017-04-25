@@ -1,5 +1,6 @@
 <!DOCTYPE html>
   <head>
+    <html lang="fr">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -10,43 +11,50 @@
 
   <body>
 
+<!-- !!!!!!!!!!!!  header !!!!!!!!!!!! -->
+
     <header>
       <img src="images/img-original/logo-34x34.png" alt="airbnb logo"/>
       <img id="arrow-img-header" src="images/img-original/menu-arrowdown-9x9.png" alt="menu icon"  />
 
-      <div class="desktop-menu-header">
+      <div class="desktop-menu-header"> <!-- only visible in desktop-->
         <a>Devenez hôte</a>
         <a>Help</a>
         <a>Inscription</a>
         <a>Connexion</a>
-
       </div>
+
     </header>
+
+<!-- !!!!!!!!!!!!  h1 !!!!!!!!!!!! -->
 
     <h1>  <!-- Different text displayed on firefox // chrome browsers -->
       <span class="h1-span">Où souhaitez-vous aller ? </span>
       Votre prochain voyage commence sur Airbnb.
     </h1>
 
+<!-- !!!!!!!!!!!!  form : search bar !!!!!!!!!!!! -->
+
     <form>
+
       <img class="mobile-img-form" src="https://cdn3.iconfinder.com/data/icons/searchicons/338/Searchicons-search-20.png" alt="search icon" />
       <p class="mobile-p-form">
         Partout · Dates indifférentes · 1 voyageur
       </p>
 
+      <!-- mediaquery // visible in desktop and tablet -->
 
+      <div class="desktop-label-form">
+        <label for="where">Où</label>
+        <input  name="where" type="text" placeholder="Partout"/>
+      </div>
 
-        <div class="desktop-label-form">
-          <label for="where">Où</label>
-          <input  name="where" type="text" placeholder="Partout"/>
-        </div>
-
-        <div class="desktop-label-form">
+      <div class="desktop-label-form">
         <label for="when">Quand</label>
         <input  name="when" type="text" placeholder="Dates indifférentes"/>
       </div>
 
-        <div class="desktop-label-form">
+      <div class="desktop-label-form">
         <label for="who">Voyageurs</label>
         <select class="select-form" name="who">
           <option value="1">1 Voyageur</option>
@@ -57,9 +65,9 @@
           <option value="6">6 Voyageurs</option>
           <option value="7">7 Voyageurs</option>
         </select>
-        </div>
+      </div>
 
-        <button id="button-form" type="submit" value="Rechercher">Rechercher</button>
+      <button id="button-form" type="submit" value="Rechercher">Rechercher</button>       <!-- mediaquery // only visible in desktop -->
 
     </form>
 
@@ -70,20 +78,22 @@
       <a href="#">Lieux</a>
     </nav>
 
-<!-- ASIDE Row #1 "Réservées à l'instant" -->
-
+<!-- !!!! aside // Row #1 "Réservées à l'instant" !!!! -->
 
     <aside>
 
       <h2>Réservées à l'instant</h2>
 
-      <div class="div-img-aside">
-
+      <div class="div-img-aside"> <!-- contains figure and figcaptions // same structure in all rows-->
 
         <figure class="exp-figure">
+
+          <!-- visible according to mediaquery -->
+
           <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
           <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
+
           <figcaption>
 
             <p>
@@ -102,6 +112,7 @@
             </div>
 
           </figcaption>
+
         </figure>
 
         <figure class="exp-figure">
@@ -206,109 +217,66 @@
     </aside>
 
 
-<!-- ASIDE Row #2 "Expériences" -->
+<!-- !!!! aside // Row #2 "experiences" !!!! -->
 
 
-<aside>
+      <aside>
 
-<h2>Expériences</h2>
+        <h2>Expériences</h2>
 
-      <div class="div-img-aside">
+        <div class="div-img-aside">
 
-      <figure class="exp-figure">
-        <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
-        <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
-        <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
-          <figcaption>
+          <figure class="exp-figure">
 
-            <p>
-              <span class="price-figcaption">90€</span>
-              Ride horses to medieval villages...
-            </p>
+            <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
+            <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
+            <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
 
-            <div class="ratings-figcaption">
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+            <figcaption>
 
-              <p class="comments-figcaption">14 commentaires</p>
-            </div>
+              <p>
+                <span class="price-figcaption">90€</span>
+                Ride horses to medieval villages...
+              </p>
 
-          </figcaption>
-        </figure>
+              <div class="ratings-figcaption">
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
 
-        <figure class="exp-figure">
-          <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
-          <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
-          <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
-          <figcaption>
+                <p class="comments-figcaption">14 commentaires</p>
+              </div>
 
-            <p>
-              <span class="price-figcaption">90€</span>
-              Ride horses to medieval villages...
-            </p>
+            </figcaption>
 
-            <div class="ratings-figcaption">
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+          </figure>
 
-              <p class="comments-figcaption">14 commentaires</p>
-            </div>
+          <figure class="exp-figure">
+            <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
+            <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
+            <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
 
-          </figcaption>
-        </figure>
+            <figcaption>
 
-        <figure class="exp-figure">
-          <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
-          <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
-          <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
-          <figcaption>
+              <p>
+                <span class="price-figcaption">90€</span>
+                Ride horses to medieval villages...
+              </p>
 
-            <p>
-              <span class="price-figcaption">90€</span>
-              Ride horses to medieval villages...
-            </p>
+              <div class="ratings-figcaption">
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+                <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
 
-            <div class="ratings-figcaption">
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-
-              <p class="comments-figcaption">14 commentaires</p>
-            </div>
+                <p class="comments-figcaption">14 commentaires</p>
+              </div>
 
           </figcaption>
-        </figure>
 
-        <figure class="exp-figure">
-          <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
-          <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
-          <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
-          <figcaption>
-
-            <p>
-              <span class="price-figcaption">90€</span>
-              Ride horses to medieval villages...
-            </p>
-
-            <div class="ratings-figcaption">
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
-
-              <p class="comments-figcaption">14 commentaires</p>
-            </div>
-
-          </figcaption>
         </figure>
 
         <figure class="exp-figure">
@@ -316,6 +284,7 @@
           <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
           <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
+
           <figcaption>
 
             <p>
@@ -334,13 +303,68 @@
             </div>
 
           </figcaption>
+
+        </figure>
+
+        <figure class="exp-figure">
+
+          <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
+          <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
+          <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
+
+          <figcaption>
+
+            <p>
+              <span class="price-figcaption">90€</span>
+              Ride horses to medieval villages...
+            </p>
+
+            <div class="ratings-figcaption">
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+
+              <p class="comments-figcaption">14 commentaires</p>
+            </div>
+
+          </figcaption>
+
+        </figure>
+
+        <figure class="exp-figure">
+
+          <img id="mobile-img-figure" src="images/img-mobile/exp-4-177x265.jpg" alt="horsing around"/>
+          <img id="desktop-img-figure" src="images/img-original/exp-4.jpg" alt="horsing around"/>
+          <img id="tablet-img-figure" src="images/img-tablet/tab-exp-4.jpg" alt="horsing around"/>
+
+          <figcaption>
+
+            <p>
+              <span class="price-figcaption">90€</span>
+              Ride horses to medieval villages...
+            </p>
+
+            <div class="ratings-figcaption">
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+              <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Star01-16.png" alt="star rating" />
+
+              <p class="comments-figcaption">14 commentaires</p>
+            </div>
+
+          </figcaption>
+
         </figure>
 
       </div>
 
     </aside>
 
-<!-- ASIDE Row #3 "Logements" -->
+<!-- !!!! aside // Row #3 "logements" !!!! -->
 
 
     <aside>
@@ -354,6 +378,7 @@
           <img id="mobile-img-figure" src="images/img-mobile/logement-240x160.jpg" alt="accommodation in berlin"/>
           <img id="desktop-img-figure" src="images/img-original/logement.jpg" alt="accommodation in berlin"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-logement.jpg" alt="accommodation in berlin"/>
+
           <figcaption>
 
             <p>
@@ -376,6 +401,7 @@
             </div>
 
           </figcaption>
+
         </figure>
 
         <figure class="logements-figure">
@@ -383,6 +409,7 @@
           <img id="mobile-img-figure" src="images/img-mobile/logement-240x160.jpg" alt="accommodation in berlin"/>
           <img id="desktop-img-figure" src="images/img-original/logement.jpg" alt="accommodation in berlin"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-logement.jpg" alt="accommodation in berlin"/>
+
           <figcaption>
 
             <p>
@@ -405,12 +432,15 @@
             </div>
 
           </figcaption>
+
         </figure>
 
         <figure class="logements-figure">
+
           <img id="mobile-img-figure" src="images/img-mobile/logement-240x160.jpg" alt="accommodation in berlin"/>
           <img id="desktop-img-figure" src="images/img-original/logement.jpg" alt="accommodation in berlin"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-logement.jpg" alt="accommodation in berlin"/>
+
           <figcaption>
 
             <p>
@@ -432,13 +462,14 @@
               <p class="comments-figcaption">14 commentaires</p>
 
           </figcaption>
+
         </figure>
 
       </div>
 
     </aside>
 
-<!-- ASIDE Row #4 "Destinations à la une" -->
+    <!-- !!!! aside // Row #4 "destinations" !!!! -->
 
     <aside>
 
@@ -446,7 +477,6 @@
 
       <div class="div-img-aside">
 
-
         <figure class="destinations-figure">
           <img id="mobile-img-figure" src="images/img-mobile/city-2-114x177.jpg" alt="tokyo"/>
           <img id="desktop-img-figure" src="images/img-original/city-2.jpg" alt="tokyo"/>
@@ -455,27 +485,35 @@
           <figcaption>
             <h3>Tokyo</h3>
           </figcaption>
+
         </figure>
 
         <figure class="destinations-figure">
+
           <img id="mobile-img-figure" src="images/img-mobile/city-2-114x177.jpg" alt="tokyo"/>
           <img id="desktop-img-figure" src="images/img-original/city-2.jpg" alt="tokyo"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-city-2.jpg" alt="tokyo"/>
+
           <figcaption>
             <h3>Tokyo</h3>
           </figcaption>
+
         </figure>
 
         <figure class="destinations-figure">
+
           <img id="mobile-img-figure" src="images/img-mobile/city-2-114x177.jpg" alt="tokyo"/>
           <img id="desktop-img-figure" src="images/img-original/city-2.jpg" alt="tokyo"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-city-2.jpg" alt="tokyo"/>
+
           <figcaption>
             <h3>Tokyo</h3>
           </figcaption>
+
         </figure>
 
         <figure class="destinations-figure">
+
           <img id="mobile-img-figure" src="images/img-mobile/city-2-114x177.jpg" alt="tokyo"/>
           <img id="desktop-img-figure" src="images/img-original/city-2.jpg" alt="tokyo"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-city-2.jpg" alt="tokyo"/>
@@ -483,9 +521,11 @@
           <figcaption>
             <h3>Tokyo</h3>
           </figcaption>
+
         </figure>
 
         <figure class="destinations-figure">
+
           <img id="mobile-img-figure" src="images/img-mobile/city-2-114x177.jpg" alt="tokyo"/>
           <img id="desktop-img-figure" src="images/img-original/city-2.jpg" alt="tokyo"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-city-2.jpg" alt="tokyo"/>
@@ -493,9 +533,11 @@
           <figcaption>
             <h3>Tokyo</h3>
           </figcaption>
+
         </figure>
 
         <figure class="destinations-figure">
+
           <img id="mobile-img-figure" src="images/img-mobile/city-2-114x177.jpg" alt="tokyo"/>
           <img id="desktop-img-figure" src="images/img-original/city-2.jpg" alt="tokyo"/>
           <img id="tablet-img-figure" src="images/img-tablet/tab-city-2.jpg" alt="tokyo"/>
@@ -503,6 +545,7 @@
           <figcaption>
             <h3>Tokyo</h3>
           </figcaption>
+
         </figure>
 
       </div>
@@ -510,22 +553,20 @@
     </aside>
 
 
-<!-- !!!!!!!!!!!!!! Section : "hosts" !!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!! section : "hosts" !!!!!!!!!!!!!! -->
 
     <section>
 
-      <img class="mobile-img" src="images/img-mobile/host-414x217.jpg" alt="#" />
+      <!-- img visible according to mediaquery -->
 
-      <img id="desktop-img" src="images/img-original/hosts.jpg" alt="#" />
-
+      <img class="mobile-img" src="images/img-mobile/host-414x217.jpg" alt="host family" />
+      <img id="desktop-img" src="images/img-original/hosts.jpg" alt="host family" />
 
       <div class="hosts-section">
 
         <h2>Ouvrez la porte à un voyageur et à une nouvelle vie</h2>
 
-        <p>
-        Complétez vos revenus en accueillant des voyageurs.
-        </p>
+        <p>Complétez vos revenus en accueillant des voyageurs.</p>
 
         <button class="button-section" type="button">Estimer mes revenus</button>
 
@@ -533,13 +574,11 @@
 
     </section>
 
-    <!-- !!!!!!!!!!!!!! footer !!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!! footer !!!!!!!!!!!!!! -->
 
     <footer>
 
-
     <div class="try">
-
 
       <div class="select-footer">
 
@@ -556,7 +595,6 @@
         </select>
 
       </div>
-
 
       <div class="desktop-footer">
         <span>Airbnb</span>
@@ -596,22 +634,20 @@
         <h4>©Airbnb, Inc.</h4>
       </div>
 
-    <div class="bottom-footer">
+      <div class="bottom-footer">
 
-      <div class="links-footer">
-        <a href="#">Conditions</a>
-        <a href="#">Politique de Confidentialité</a>
+        <div class="links-footer">
+          <a href="#">Conditions</a>
+          <a href="#">Politique de Confidentialité</a>
+        </div>
+
+        <div class="socialmedia-footer">
+          <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_284-16.png" alt="facebook icon" />
+          <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_266-16.png" alt="twitter icon" />
+          <img src="https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_instagram-16.png" alt="instagram icon" />
+        </div>
+
       </div>
-
-      <div class="socialmedia-footer">
-        <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_284-16.png" alt="facebook icon" />
-        <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_266-16.png" alt="twitter icon" />
-        <img src="https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_instagram-16.png" alt="instagram icon" />
-      </div>
-
-    </div>
-
-
 
     </footer>
 
