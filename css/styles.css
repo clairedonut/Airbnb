@@ -317,6 +317,11 @@ footer a, footer img, footer h4 {
     border-bottom: 2px solid #484848;
   }
 
+  h1 {
+    width: 60%;
+    margin-left: 0;
+  }
+
 
 
 }
