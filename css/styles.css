@@ -196,3 +196,37 @@ h4 {
 footer a, footer img, footer h4 {
   margin: auto 5px;
 }
+
+/* ---------  mobile-first: hidden tablet and desktop elements --------- */
+
+.tablet, .desktop {
+  display: none;
+}
+
+/* ---------  tablet - media query - min-device-width: 745px  --------- */
+
+@media (min-device-width: 745px) {
+
+  .mobile, .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  form div {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: 10px 5px;
+  }
+
+  form p {
+    margin: auto 5px;
+  }

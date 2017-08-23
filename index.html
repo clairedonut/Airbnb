@@ -32,9 +32,52 @@
           Book unique homes and experience a city like local.
         </h1>
 
-        <form>
+        <form class="mobile">
           <img src="img/icons/search-18x18.png" alt="search icon" />
           <p>Anywhere · Anytime · 1 guest</p>
+        </form>
+
+        <form class="tablet">
+          <div>
+            <img src="img/icons/search-18x18.png" alt="search icon" />
+            <p>Anywhere</p>
+          </div>
+          <div>
+            <img src="img/icons/calendar.png" alt="search icon" />
+            <p>Anytime</p>
+          </div>
+          <div>
+            <img src="img/icons/guests.png" alt="search icon" />
+            <p>1 guest</p>
+          </div>
+        </form>
+
+        <!-- mediaquery // visible in desktop and tablet -->
+        <form class="desktop">
+
+          <div class="desktop-label-form">
+            <label for="where">Anywhere</label>
+            <input  name="where" type="text" placeholder="Partout"/>
+          </div>
+
+          <div class="desktop-label-form">
+            <label for="when">Anytime</label>
+            <input  name="when" type="text" placeholder="Dates indifférentes"/>
+          </div>
+
+          <div class="desktop-label-form">
+            <label for="who">1 guest</label>
+            <select class="select-form" name="who">
+              <option value="1">1 Voyageur</option>
+              <option value="2">2 Voyageurs</option>
+              <option value="3">3 Voyageurs</option>
+              <option value="4">4 Voyageurs</option>
+              <option value="5">5 Voyageurs</option>
+              <option value="6">6 Voyageurs</option>
+              <option value="7">7 Voyageurs</option>
+            </select>
+          </div>
+
         </form>
 
         <nav>
