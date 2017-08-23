@@ -148,3 +148,43 @@ figcaption p span {
   padding: 1px;
   font-size: 12px;
 }
+
+/* -------------------------- footer -------------------------- */
+
+footer {
+  border-top: 1px solid rgb(219, 219, 219);
+  font-size: 14px;
+}
+
+.dropdowns { /* select language and select currency dropdowns*/
+  display: flex;
+}
+
+select {
+  padding: 12px ;
+  margin: 25px 8px;
+  width: 50%;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(219, 219, 219);
+  -webkit-appearance: menulist-button;
+
+  font-size: 19px;
+  line-height: 24px;
+  color: #767676;
+  background-color: #fff;
+}
+
+h4 {
+  margin: 0;
+}
+
+.corporate, .links {
+  display: flex;
+  align-items: center;
+}
+
+footer a, footer img, footer h4 {
+  margin: auto 5px;
+}
