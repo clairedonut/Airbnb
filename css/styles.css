@@ -65,7 +65,7 @@ form p {
 
 /* ------------- main nav ------------- */
 
-nav {
+main nav {
   font-family: Helvetica, sans-serif;
   font-size: 11px;
   font-weight: bold;
@@ -81,11 +81,11 @@ nav {
   white-space: nowrap;
 }
 
-nav a {
+main nav a {
   margin-right: 16px;
 }
 
-nav a span {
+main nav a span {
   color: #008489;
   padding-bottom: 12px;
   border-bottom: 2px solid #008489;
@@ -205,7 +205,7 @@ footer a, footer img, footer h4 {
 
 /* ---------  tablet - media query - min-device-width: 745px  --------- */
 
-@media (min-device-width: 745px) {
+@media (min-width: 745px) {
 
   .mobile, .desktop {
     display: none;
@@ -246,6 +246,7 @@ footer a, footer img, footer h4 {
   footer {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 30px;
   }
 
   footer h3 {
@@ -283,3 +284,39 @@ footer a, footer img, footer h4 {
     display: flex;
     justify-content: space-between;
   }
+
+  /* ---------  desktop - media query - min-device-width: 1028px  --------- */
+
+@media (min-width: 1028px) {
+
+  .arrow {
+    display: none;
+  }
+
+  main, footer {
+    width: 90%;
+    margin: auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .desktop {
+    display: flex;
+  }
+
+  header nav a {
+    margin: auto 15px 10px 15px;
+    font-size: 14px;
+    border-bottom: 2px solid #fff;
+  }
+
+  header nav a:hover {
+    border-bottom: 2px solid #484848;
+  }
+
+
+
+}
