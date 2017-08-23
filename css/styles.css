@@ -169,7 +169,7 @@ footer aside {
 }
 
 select {
-  padding: 12px ;
+  padding: 12px;
   margin: 25px 8px;
   width: 50%;
 
@@ -229,4 +229,57 @@ footer a, footer img, footer h4 {
 
   form p {
     margin: auto 5px;
+  }
+
+  .experience { /*x4 images per row*/
+    min-width: 24%;
+  }
+
+  .home { /*x2 images per row*/
+    min-width: 50%;
+  }
+
+  .city { /*x4 images per row*/
+    min-width: 24%;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer h3 {
+    margin-top: 0;
+  }
+
+  .dropdowns {
+    width: 25%;
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  select {
+    width: 80%;
+    margin: 8px;
+  }
+
+  aside.tablet {
+    display: flex;
+    width: 70%;
+  }
+
+  .menu {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu  a {
+    margin: 0;
+  }
+
+  .corporateinfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
