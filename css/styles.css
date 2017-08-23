@@ -1,0 +1,23 @@
+body {
+  font-family: 'Poppins', sans-serif; /* closest font to Airbnb's circular */
+  color: #484848;
+  margin: 0;
+  padding: 15px 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #484848;
+}
+
+::-webkit-scrollbar { /* scrollbar is invisible - nav and aside*/
+    display: none;
+}
+
+/* ------------- Header ------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
