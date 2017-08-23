@@ -14,10 +14,47 @@ a {
     display: none;
 }
 
-/* ------------- Header ------------- */
+/* ------------- header ------------- */
 
 header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+/* ------------- main ------------- */
+
+
+h1{
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: -0.6px;
+}
+
+h1 span {
+  color: #FF5A5F;
+  font-weight: bold;
+}
+
+/* -- form -- */
+
+form {
+  padding: 11px 12px;
+  cursor: pointer;
+
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+}
+
+form p {
+  padding: 0;
+  margin: 0;
+  white-space: nowrap; /* keeps text on one line*/
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
