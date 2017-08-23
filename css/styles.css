@@ -14,6 +14,10 @@ a {
     display: none;
 }
 
+h1, section {
+  margin:50px auto;
+}
+
 /* -------------------------- header -------------------------- */
 
 header {
@@ -40,7 +44,7 @@ h1 span {
 /* ------------- form ------------- */
 
 form {
-  padding: 11px 12px;
+  padding: 5px 12px;
   cursor: pointer;
 
   border: 1px solid #DBDBDB;
@@ -154,6 +158,10 @@ figcaption p span {
 footer {
   border-top: 1px solid rgb(219, 219, 219);
   font-size: 14px;
+}
+
+footer aside {
+  margin: 20px auto;
 }
 
 .dropdowns { /* select language and select currency dropdowns*/
