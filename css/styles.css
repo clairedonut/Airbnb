@@ -345,10 +345,21 @@ footer a, footer img, footer h4 {
     font-size: 14px;
   }
 
-   form.tablet .desktop.flex-between {
+  form.tablet .desktop.flex-between {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  form.tablet div select {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+  }
+
+  #guests {
+    padding: 0;
   }
 
   button {
