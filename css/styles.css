@@ -374,5 +374,18 @@ footer a, footer img, footer h4 {
     font-size: 19px;
   }
 
+  .experience { /*x4 images per row*/
+    min-width: 23%;
+  }
+
+  .home { /*x3 images per row*/
+    min-width: 33%;
+  }
+
+  .city { /*x6 images per row*/
+    min-width: 16%;
+  }
+
+
 
 }
