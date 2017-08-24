@@ -289,7 +289,7 @@ footer a, footer img, footer h4 {
 
 @media (min-width: 1028px) {
 
-  .arrow {
+  .arrow, .hide {
     display: none;
   }
 
@@ -303,7 +303,7 @@ footer a, footer img, footer h4 {
     justify-content: space-between;
   }
 
-  header .desktop {
+  header .desktop, form.tablet div .desktop,  form.tablet .desktop {
     display: flex;
   }
 
@@ -322,6 +322,46 @@ footer a, footer img, footer h4 {
     margin-left: 0;
   }
 
+  form.tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form.tablet div img {
+    display: none;
+  }
+
+  form.tablet div {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  form.tablet div p {
+    margin: 5px 0;
+  }
+
+  form.tablet div .desktop {
+    font-size: 14px;
+  }
+
+   form.tablet .desktop.flex-between {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button {
+    padding: 15px 18px;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    background-color: #FF5A5F;
+  }
+
+  button span {
+    font-size: 19px;
+  }
 
 
 }
