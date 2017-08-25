@@ -1,0 +1,391 @@
+body {
+  font-family: 'Poppins', sans-serif; /* closest font to Airbnb's circular */
+  color: #484848;
+  margin: 0;
+  padding: 15px 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #484848;
+}
+
+::-webkit-scrollbar { /* scrollbar is invisible - nav and aside*/
+    display: none;
+}
+
+h1, section {
+  margin:50px auto;
+}
+
+/* -------------------------- header -------------------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* -------------------------- main -------------------------- */
+
+
+h1{
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: -0.6px;
+}
+
+h1 span {
+  color: #FF5A5F;
+  font-weight: bold;
+}
+
+/* ------------- search (form) ------------- */
+
+form {
+  padding: 5px 12px;
+  cursor: pointer;
+
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+}
+
+form p {
+  padding: 0;
+  margin: 0;
+  white-space: nowrap; /* keeps text on one line*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* ------------- main nav ------------- */
+
+main nav {
+  font-family: Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border-bottom: 0.5px solid lightgrey;
+
+  overflow: auto;
+  white-space: nowrap;
+}
+
+main nav a {
+  margin-right: 16px;
+}
+
+main nav a span {
+  color: #008489;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #008489;
+}
+
+/* ------------- section ------------- */
+
+h2 {
+  width: 100%;
+}
+
+section div { /* contains figures */
+  overflow: auto;
+  display: flex;
+}
+
+figure {
+  margin: 6px;
+}
+
+.experience {
+  min-width: 45%;
+}
+
+.home {
+  min-width: 60%;
+}
+
+.city {
+  min-width: 30%;
+}
+
+.figure-img {
+  width: 100%;
+  height: auto;
+}
+
+
+figcaption p {
+  margin: 0;
+  font-size: 14px;
+  flex-flow: nowrap;
+  justify-content: flex-start;
+
+  line-height: 1.5em;
+  max-height: 3em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+figcaption p span {
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rating img, .rating p {
+  padding: 1px;
+  font-size: 12px;
+}
+
+/* -------------------------- footer -------------------------- */
+
+footer {
+  border-top: 1px solid rgb(219, 219, 219);
+  font-size: 14px;
+}
+
+footer aside {
+  margin: 20px auto;
+}
+
+.dropdowns { /* select language and select currency dropdowns*/
+  display: flex;
+}
+
+select {
+  padding: 12px;
+  margin: 25px 8px;
+  width: 50%;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(219, 219, 219);
+  -webkit-appearance: menulist-button;
+
+  font-size: 19px;
+  line-height: 24px;
+  color: #767676;
+  background-color: #fff;
+}
+
+h4 {
+  margin: 0;
+}
+
+.corporate, .links {
+  display: flex;
+  align-items: center;
+}
+
+footer a, footer img, footer h4 {
+  margin: auto 5px;
+}
+
+/* ---------  mobile-first: hidden tablet and desktop elements --------- */
+
+.tablet, .desktop {
+  display: none;
+}
+
+/* ---------  tablet - media query - min-device-width: 745px  --------- */
+
+@media (min-width: 745px) {
+
+  .mobile, .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  form div {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: 10px 5px;
+  }
+
+  form p {
+    margin: auto 5px;
+  }
+
+  .experience { /*x4 images per row*/
+    min-width: 24%;
+  }
+
+  .home { /*x2 images per row*/
+    min-width: 50%;
+  }
+
+  .city { /*x4 images per row*/
+    min-width: 24%;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  footer h3 {
+    margin-top: 0;
+  }
+
+  .dropdowns {
+    width: 25%;
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  select {
+    width: 80%;
+    margin: 8px;
+  }
+
+  aside.tablet {
+    display: flex;
+    width: 70%;
+  }
+
+  .menu {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu  a {
+    margin: 0;
+  }
+
+  .corporateinfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ---------  desktop - media query - min-device-width: 1028px  --------- */
+
+@media (min-width: 1028px) {
+
+  .arrow, .hide {
+    display: none;
+  }
+
+  main, footer {
+    width: 90%;
+    margin: auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .desktop, form.tablet div .desktop,  form.tablet .desktop {
+    display: flex;
+  }
+
+  header nav a {
+    margin: auto 15px 10px 15px;
+    font-size: 14px;
+    border-bottom: 2px solid #fff;
+  }
+
+  header nav a:hover {
+    border-bottom: 2px solid #484848;
+  }
+
+  h1 {
+    width: 60%;
+    margin-left: 0;
+  }
+
+  form.tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form.tablet div img {
+    display: none;
+  }
+
+  form.tablet div {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  form.tablet div p {
+    margin: 5px 0;
+  }
+
+  form.tablet div .desktop {
+    font-size: 14px;
+  }
+
+  form.tablet .desktop.flex-between {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form.tablet div select {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+  }
+
+  #guests {
+    padding: 0;
+  }
+
+  button {
+    padding: 15px 18px;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    background-color: #FF5A5F;
+  }
+
+  button span {
+    font-size: 19px;
+  }
+
+  .experience { /*x4 images per row*/
+    min-width: 23%;
+  }
+
+  .home { /*x3 images per row*/
+    min-width: 33%;
+  }
+
+  .city { /*x6 images per row*/
+    min-width: 16%;
+  }
+
+
+
+}
