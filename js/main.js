@@ -1,6 +1,35 @@
-// Soft Scroll
-
 $( function() {
+
+  // dropdown nav for mobile and tablet
+
+  if ($(window).width() < 745) {
+    $(".brand").click(function(){
+        $(".nav").removeClass(".display.none");
+        $(".nav").slideToggle();
+    });
+  }
+
+//   $(window).resize(function() {
+//     //do something
+//
+//     var width = $(window).width();
+//     if (width < 750) {
+//       $(".moo").click(function(){
+//           $(".poo").removeClass(".display.none");
+//           $(".poo").slideToggle();
+//       });    }
+// });
+//
+
+
+  // $(window).resize(function(){
+  //   if ($(this).width() > 750) {
+  //     $(".poo").addClass(".display.none");
+  //   }
+  // });
+
+
+  // smooth scroll
 
   $('.scroll').click(function(){
 
@@ -11,92 +40,67 @@ $( function() {
     },'slow');
   });
 
+  // main nav - selection layout
+
+$.fn.selectNav = function () {
+
+    $(this).mouseenter(function() {
+        $(this).css({
+          "color": "#008489",
+          "padding-bottom": "12px",
+          "border-bottom": "2px solid #008489"
+        });
+    });
+
+    $(this).mouseleave(function() {
+        $(this).css({
+          "color": "#484848",
+          "padding-bottom": "none",
+          "border-bottom": "none"
+        });
+    });
+
+    $(this).click(function() {
+      $(this).css({
+        "color": "#008489",
+        "padding-bottom": "12px",
+        "border-bottom": "2px solid #008489"
+      });
+    });
+
+  }
+
+$('main nav a').selectNav();
+$('main nav a span').selectNav();
+
+
+// reset main nav span
+
+$("main nav").mouseenter(function(){
+  $("main nav a span").css({
+    "color": "#484848",
+    "padding-bottom": "none",
+    "border-bottom": "none"
+  });
 });
 
+// slider arrows
 
+$.fn.slider = function () {
 
-// Autocomplete
-var options = {
+  $(".slider").hover(function(){
+    $("i").toggleClass( "hidden" );
+  });
 
-  url: "js/cities.json",
+  $("i").click(function() {
+    console.log("slider click");
+    // $("figure").slideToggle("slow");
+ })
 
-  getValue: "name",
-
-  list: {
-    match: {
-      enabled: true
-    }
-  },
-
-  theme: "square"
 };
 
-$(function() {
-  $("#cities").easyAutocomplete(options);
-});
 
-// Date picker
-$( function() {
-    var dateFormat = "mm/dd/yy",
-      from = $( "#from" )
-        .datepicker({
-          defaultDate: "+1w",
-          changeMonth: true,
-          numberOfMonths: 2
-        })
-        .on( "change", function() {
-          to.datepicker( "option", "minDate", getDate( this ) );
-        }),
-      to = $( "#to" ).datepicker({
-        defaultDate: "+1w",
-        changeMonth: true,
-        numberOfMonths: 2
-      })
-      .on( "change", function() {
-        from.datepicker( "option", "maxDate", getDate( this ) );
-      });
+$('.slider').slider();
 
-    function getDate( element ) {
-      var date;
-      try {
-        date = $.datepicker.parseDate( dateFormat, element.value );
-      } catch( error ) {
-        date = null;
-      }
 
-      return date;
-    }
-
-  } );
-
-  // Autocomplete Jquery
-
-  $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
+}); // END
