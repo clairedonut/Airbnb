@@ -4,9 +4,9 @@ This project displays a reproduction of the Airbnb homepage in responsive design
 
 ## Key elements
 
-* Media queries: breakpoints where different parts of the web page are displayed differently depending on the size of the pa$
-* Mobile-first: The webpage was first designed and coded for mobile formats
-* Media optimisation: optimisation of page loading time with different srcsets per image in order to avoid having to load huge images on mobile 
+* Mobile-first approach: Responsive web design coded first for a mobile format and then adapted to tablet and desktop breakpoints
+* Media queries: Element styles are displayed and defined according to properties related to breakpoints 
+* Media optimisation: optimisation of page loading time with different srcsets per image to avoid loading large images on mobile
 * Jquery : a dropdown nav in mobile format, smooth scroll to page anchors, styles accroding to mouseenter, mouseleave, click etc events 
 * Jquery plugins : autocomplete plugin and date picker in search form
 
