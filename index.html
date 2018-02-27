@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="js/easyautocomplete-1.3.5/easy-autocomplete.themes.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -36,26 +38,47 @@
       </header>
 
       <main>
+          <div class="ui-widget">
+            <label for="tags">Tags: </label>
+            <input id="tags">
+          </div>
+
+        <!-- <input id="cities"/> -->
+        <!-- <label for="from">From</label>
+        <input type="text" id="from" name="from">
+        <label for="to">to</label>
+        <input type="text" id="to" name="to"> -->
+
+
         <h1>
           <span>Airbnb</span><br />
           Book unique homes and experience a city like local.
         </h1>
+
+        <!-- Search Form MOBILE -->
 
         <form class="mobile">
           <img src="img/icons/search-18x18.png" alt="search icon" />
           <p>Anywhere · Anytime · 1 guest</p>
         </form>
 
+        <!-- Search Form TABLET -->
+
         <form class="tablet">
           <div>
             <p class="desktop">Where</p>
             <img src="img/icons/search-18x18.png" alt="search icon" />
-            <p>Anywhere</p>
+            <!-- <p>Anywhere</p> -->
+            <input id="cities" name="where" type="text" placeholder="Anywhere"/>
           </div>
           <div>
             <p class="desktop">When</p>
             <img src="img/icons/calendar.png" alt="search icon" />
-            <p>Anytime</p>
+            <!-- <p>Anytime</p> -->
+            <label for="from">From</label>
+            <input type="text" id="from" name="from">
+            <label for="to">to</label>
+            <input type="text" id="to" name="to">
           </div>
           <div class="hide"> <!-- hidden @mediaquery desktop-->
             <img src="img/icons/guests.png" alt="search icon" />
@@ -80,17 +103,22 @@
 
         </form>
 
-        <!-- mediaquery // visible in desktop and tablet -->
+        <!-- search form // DESKTOP -->
         <form class="desktop">
 
           <div class="desktop-label-form">
             <label for="where">Anywhere</label>
-            <input  name="where" type="text" placeholder="Partout"/>
+            <input id="cities" name="where" type="text" placeholder="Partout"/>
+            <!-- <input  name="where" type="text" placeholder="Partout"/> -->
           </div>
 
           <div class="desktop-label-form">
-            <label for="when">Anytime</label>
-            <input  name="when" type="text" placeholder="Dates indifférentes"/>
+            <!-- <label for="when">Anytime</label>
+            <input  name="when" type="text" placeholder="Dates indifférentes"/> -->
+            <label for="from">From</label>
+            <input type="text" id="from" name="from">
+            <label for="to">to</label>
+            <input type="text" id="to" name="to">
           </div>
 
           <div class="desktop-label-form">
@@ -115,7 +143,9 @@
           <a href="#">Places</a>
         </nav>
 
-        <section>  <!-- section featuring experiences category -->
+        <!-- section featuring experiences category -->
+        
+        <section>
           <h2>Experiences</h2>
 
           <div>
@@ -541,10 +571,12 @@
       </footer>
 
 
-        <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/easyautocomplete-1.3.5/jquery.easy-autocomplete.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script> -->
+        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
