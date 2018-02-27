@@ -1,3 +1,5 @@
+/* general style */
+
 body {
   font-family: 'Poppins', sans-serif; /* closest font to Airbnb's circular */
   color: #484848;
@@ -10,12 +12,46 @@ a {
   color: #484848;
 }
 
-::-webkit-scrollbar { /* scrollbar is invisible - nav and aside*/
+/* scrollbar is invisible - nav and aside*/
+::-webkit-scrollbar {
     display: none;
 }
 
 h1, section {
   margin:50px auto;
+}
+
+input, .bulletsnone {
+  list-style-type: none;
+}
+
+.hidden {
+visibility: hidden;
+}
+
+.display.none {
+  display: none;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 /* -------------------------- header -------------------------- */
@@ -61,6 +97,18 @@ form p {
   white-space: nowrap; /* keeps text on one line*/
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+form input {
+  border: 0;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #484848;
+  font-size: 16px;
+}
+
+.input-lg {
+  width: 100%;
 }
 
 /* ------------- main nav ------------- */
@@ -203,7 +251,7 @@ footer a, footer img, footer h4 {
   display: none;
 }
 
-/* ---------  tablet - media query - min-device-width: 745px  --------- */
+/* ---------  TABLET - min-device-width: 745px  --------- */
 
 @media (min-width: 745px) {
 
@@ -223,12 +271,28 @@ footer a, footer img, footer h4 {
   form div {
     display: flex;
     align-items: center;
-    width: 30%;
-    margin: 10px 5px;
+    margin: .2em;
   }
 
   form p {
     margin: auto 5px;
+  }
+
+  form .dates {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  form .datesformat input {
+    max-width: 50%;
+  }
+
+  .datesformat {
+    width: 50%;
+  }
+  form select {
+    font-size: 16px;
+    border: 0;
   }
 
   .experience { /*x4 images per row*/
@@ -285,11 +349,11 @@ footer a, footer img, footer h4 {
     justify-content: space-between;
   }
 
-  /* ---------  desktop - media query - min-device-width: 1028px  --------- */
+  /* ---------  DESKTOP - min-device-width: 1028px  --------- */
 
 @media (min-width: 1028px) {
 
-  .arrow, .hide {
+  .arrow, .hide, .tablet {
     display: none;
   }
 
@@ -303,7 +367,7 @@ footer a, footer img, footer h4 {
     justify-content: space-between;
   }
 
-  header .desktop, form.tablet div .desktop,  form.tablet .desktop {
+  header .desktop, div .desktop, .desktop {
     display: flex;
   }
 
@@ -322,44 +386,12 @@ footer a, footer img, footer h4 {
     margin-left: 0;
   }
 
-  form.tablet {
-    display: flex;
-    justify-content: space-between;
+  label {
+    padding: 10px;
   }
 
-  form.tablet div img {
-    display: none;
-  }
-
-  form.tablet div {
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-  }
-
-  form.tablet div p {
-    margin: 5px 0;
-  }
-
-  form.tablet div .desktop {
-    font-size: 14px;
-  }
-
-  form.tablet .desktop.flex-between {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  form.tablet div select {
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: 100px;
-  }
-
-  #guests {
-    padding: 0;
+  select {
+    width: 100%;
   }
 
   button {
@@ -385,7 +417,5 @@ footer a, footer img, footer h4 {
   .city { /*x6 images per row*/
     min-width: 16%;
   }
-
-
 
 }
