@@ -1,6 +1,6 @@
 # Airbnb reproduction
 
-This project displays a reproduction of the Airbnb homepage in responsive design. This project has been updated to also include jquery plugins and dynamic elements.
+This project is a reproduction of the Airbnb homepage in responsive design. This project has been updated to also include jquery plugins and dynamic elements.
 
 ## Key elements
 
@@ -12,7 +12,7 @@ This project displays a reproduction of the Airbnb homepage in responsive design
 
 The project is available [here](http://cookiesandwifi.ovh/airbnb) .
 
-Screenshot of originial Airbnb home page - mobile-first: 
+Screenshot of the Airbnb home page - mobile-first: 
 
 
 ![Airbnb mobile first](https://github.com/clairedonut/Airbnb/blob/master/airbnb_site_screenshots/airbnb_mobile.png)
